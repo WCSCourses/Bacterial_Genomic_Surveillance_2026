@@ -1,0 +1,11 @@
+name: dragonflye_vm_safe
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.8
+  - h5py
+  - pip
+  - dragonflye
+

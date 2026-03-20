@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Wrapper to run medaka inside Docker
+docker run --rm \
+  -v "$PWD":/data \
+  -w /data \
+  ontresearch/medaka medaka "$@"
+

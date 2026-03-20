@@ -1,0 +1,2 @@
+pip install https://github.com/jithurjacob/AVX-for-Tensorflow/releases/download/v2.10.0/tensorflow-2.10.0-cp38-cp38-linux_x86_64.whl
+
