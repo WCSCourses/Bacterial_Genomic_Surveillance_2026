@@ -73,7 +73,7 @@ These specifications are recommended to ensure smooth participation in the pract
 - [Caterina Guzman](https://scholar.google.com/citations?user=S1GNAC8AAAAJ&hl=en), Centro de Investigación Enfermedades Tropicales, Costa Rica
 - [César Rodríguez](https://scholar.google.com/citations?user=Mq0-MIsAAAAJ&hl=en), Centro de Investigación Enfermedades Tropicales, Costa Rica
 - [Julio Diaz Caballero](https://eit.org/people/julio-diaz-caballero), Ellison Institute of Technology Oxford, United Kingdom
-- [Marcela Suarez Esquivel](https://scholar.google.com/citations?user=pdf6GMQAAAAJ&hl=en), Universidad Nacional, Costa Rica
+- [Marcela Suarez-Esquivel](https://scholar.google.com/citations?user=pdf6GMQAAAAJ&hl=en), Universidad Nacional, Costa Rica
 - [Matthew Dorman](https://www.universityofgalway.ie/our-research/people/mathematical-statistical-sciences/matthewdorman/), Trinity College Dublin, Ireland
 - [Tomás Caride Poklepovich](https://www.linkedin.com/in/tom%C3%A1s-javier-pokl%C3%A9povich-caride-6a622322/), Administración Nacional de Laboratorios e Institutos de Salud, Argentina
 
