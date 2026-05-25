@@ -6,7 +6,7 @@
 
 # Comparative genomics - Dublin 2026 <!-- omit in toc -->
 
-### Module Lead: Marcela Suarez Esquivel <!-- omit in toc -->
+### Module Lead: Marcela Suarez-Esquivel <!-- omit in toc -->
 <br>
 
 # Table of contents <!-- omit in toc -->
