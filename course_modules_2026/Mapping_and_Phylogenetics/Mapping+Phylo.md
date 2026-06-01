@@ -197,7 +197,7 @@ We can also examine the contents of this file
 ```
 ls -l
 ```
-![directory_contents](Directory_ls_start_2024.png)
+![directory_contents](Module_4/Directory_ls_start_2026.png)
 
 <br>
 
@@ -218,7 +218,7 @@ You can view the options for snippy using the following code:
 ```
 snippy -h
 ```
-![snippy.h](snippy_-h__2024.png)
+![snippy.h](Module_4/snippy_-h_2026.png)
 
 <br>
 
@@ -239,7 +239,7 @@ snippy --outdir new-sample-1 --R1 new-sample-1_1.fastq.gz --R2 new-sample-1_2.fa
 
 Wait for `snippy` to finish
 
-![snippy.run1](snippy-run_1_2024.png)
+![snippy.run1](Module_4/snippy-run_1_2026.png)
 
 Examine results of `snippy`
 
@@ -247,7 +247,7 @@ Examine results of `snippy`
 ls -lh new-sample-1/
 ```
 
-![snippy.run1.output](snippy-pst_ls_2024.png)
+![snippy.run1.output](Module_4/snippy-pst_ls__2026.png)
 
 You can examine the log file to see exactly what `snippy` has done
 
@@ -265,31 +265,31 @@ First, here is the command we used to set `snippy` running
 ```
 grep "outdir" new-sample-1/snps.log
 ```
-![snippy.run1.grep1](snippy-grep-command__2024.png)
+![snippy.run1.grep1](Module_4/snippy-grep-command__2026.png)
 
 After ensuring the reference genome is indexed, `snippy` maps the reads to the reference genome using `bwa mem`
 ```
 grep "bwa mem" new-sample-1/snps.log
 ```
-![snippy.run1.grep2](snippy-bwa-command__2024.png)
+![snippy.run1.grep2](Module_4/snippy-bwa-command__2026.png)
 
 Within that command, `snippy` also marks duplicate sequencing reads using `samtools markdup` (we extract only the first part of that command here, but you can look for it with `less`)
 ```
 grep "COMMAND: samtools" new-sample-1/snps.log
 ```
-![snippy.run1.grep3](snippy-markdup__2024.png)
+![snippy.run1.grep3](Module_4/snippy-markdup__2026.png)
 
 `Snippy` then uses `FreeBayes` to call variants against the reference genome, producing a variant call file (.vcf)
 ```
 grep "freebayes" new-sample-1/snps.log
 ```
-![snippy.run1.grep4](snippy-freebayes__2024.png)
+![snippy.run1.grep4](Module_4/snippy-freebayes__2026.png)
 
 `Snippy` then applies some filters to assess the quality of those variants. It then applies the high quality variants to the reference genome to create a ‘pseudosequence consensus’ representation of our new genome
 ```
 grep "bcftools consensus" new-sample-1/snps.log
 ```
-![snippy.run1.grep5](snippy-bcftools-consensus__2024.png)
+![snippy.run1.grep5](Module_4/snippy-bcftools-consensus__2026.png)
 
 `Snippy` creates two versions of the pseudosequence consensus:
 - `snps.consensus.fa` contains all high quality variants
@@ -304,13 +304,13 @@ The `bam` file contains all the mapping positions on the genome for each individ
 ```
 samtools view new-sample-1/snps.bam | head -2
 ```
-![snippy.run1.samtools-view](snippy-samtools-view-bam__2024.png)
+![snippy.run1.samtools-view](Module_4/snippy-samtools-view-bam__2026.png)
 
 The `VCF` file contains all the variants that have been called in our new genome compared to the reference genome
 ```
 head -35 new-sample-1/snps.vcf 
 ```
-![snippy.run1.vcf](snippy-vcf__2024.png)
+![snippy.run1.vcf](Module_4/snippy-vcf__2026.png)
 
 The first ~28 lines here are ‘headers’ and contain information about what has been done to call the variants, and helps you to interpret what different columns mean.
 
@@ -323,7 +323,7 @@ We can view a slightly easier summary of these variants in the snps.tab file
 ```
 head -5 new-sample-1/snps.tab
 ```
-![snippy.run1.snps](snippy-snps.tab__2024.png)
+![snippy.run1.snps](Module_4/snippy-snps.tab__2026.png)
 
 In this file, we have not provided gene information, so only the first 6 columns are relevant
 
@@ -331,7 +331,7 @@ In this file, we have not provided gene information, so only the first 6 columns
 ```
 head new-sample-1/snps.consensus.fa
 ```
-![snippy.run1.consensus.fa](snippy-consensus.fasta.1__2024.png)
+![snippy.run1.consensus.fa](Module_4/snippy-consensus.fasta.1__2026.png)
 
 <br>
 
@@ -371,7 +371,7 @@ The reads are hosted in the course GitHub repository. If that has been updated o
 ls -lh ~/github_repository/course_data_2025/mapping_and_phylo/
 ```
 
-![github.repo.ls](github.repo.ls__2024.png)
+![github.repo.ls](github.repo.ls__2026.png)
 
 If the files are missing, check with the instructors.
 
@@ -394,7 +394,7 @@ snippy --outdir CTMA_1441.short --ctgs CTMA_1441.unicycler-short.fasta --ref ref
 
 <br>
 
-![snippy_assembly_example](snippy_assembly_example__2024.png)
+![snippy_assembly_example](Module_4/snippy_assembly_example__2026.png)
 
 <br>
 
@@ -432,7 +432,7 @@ Check the files are there:
 ls -lh
 ```
 
-![snippy-context.copy-git.ls](snippy-context.copy-git.ls__2024.png)
+![snippy-context.copy-git.ls](Module_4/snippy-context.copy-git.ls__2026.png)
 
 
 (Note that there is an existing file in our directory called `old.snippy.runs.2023.tar.gz - we will not be using this).
@@ -447,12 +447,12 @@ We can see that we now have a new directory `old.snippy.runs_2024`
 ```
 ls -lh
 ```
-![snippy-context.tar.ls1](untar.old-snippy-files.ls__2024.png)
+![snippy-context.tar.ls1](Module_4/untar.old-snippy-files.ls__2026.png)
 
 ```
 ls -lh old.snippy.runs_2024
 ```
-![snippy-context.tar.ls2](untar.old-snippy-files.ls2__2024.png)
+![snippy-context.tar.ls2](Module_4/untar.old-snippy-files.ls2__2026.png)
 
 <br>
 
@@ -466,31 +466,31 @@ Now lets use `snippy-core` to summarise all these genomes along with the new one
 ```
 snippy-core --ref references/Vibrio_cholerae_O1_biovar_eltor_str_N16961_v2.fa old.snippy.runs_2024/* new-sample-1 new-sample-2 CTMA_1441.short CTMA_1441.long_polish CTMA_1441.long_nopolish
 ```
-![snippy-core.run1](snippy-core-run__2024.png)
+![snippy-core.run1](Module_4/snippy-core-run__2026.png)
 
 `Snippy` has now created a number of files, including a ‘core SNP alignment’
 ```
 ls -l core.*
 ```
-![snippy-core.run2](snippy-core.ls1__2024.png)
+![snippy-core.run2](Module_4/snippy-core.ls1__2026.png)
 
 We have various files that summarise our variants, e.g.
 ```
 head core.tab 
 ```
-![snippy-core.run3](snippy-core_head-tab__2024.png)
+![snippy-core.run3](Module_4/snippy-core_head-tab__2026.png)
 
 And our multiple sequence alignment containing all genomes:
 ```
 head core.full.aln
 ```
-![snippy-core.run4](snippy-core_head.core.aln__2024.png)
+![snippy-core.run4](Module_4/snippy-core_head.core.aln__2026.png)
 
 This file masks sequences with low confidence in different ways, but for some applications we want everything masked in the same way. Let’s change that so anything uncertain is marked as ’N’ using the `snippy-clean_full_aln` script that comes with `snippy`.
 ```
 snippy-clean_full_aln core.full.aln > clean.full.aln
 ```
-![snippy-core.run5](snippy-core_clean.aln__2024.png)
+![snippy-core.run5](Module_4/snippy-core_clean.aln__2026.png)
 
 <br>
 
