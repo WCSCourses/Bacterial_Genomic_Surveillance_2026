@@ -7,7 +7,7 @@
 
 # Mapping and Phylogenetics - Dublin 2026 <!-- omit in toc -->
 
-### Module Leads: Marcela Suarez Esquivel and César Rodríguez <!-- omit in toc -->
+### Module Leads: Marcela Suárez-Esquivel and César Rodríguez <!-- omit in toc -->
 <br>
 
     
@@ -380,7 +380,7 @@ If the files are missing, check with the instructors.
 Assuming they are available, we can copy the assemblies to our current working directory to make things easier:
 
 ```
-cp ~/github_repository/course_data_2025/mapping_and_phylo/CTMA_1441.* .
+cp ~/github_repository/course_data_2026/mapping_and_phylo/CTMA_1441.* .
 ```
 
 <br>
@@ -425,7 +425,7 @@ We can add this genome to a collection of genomes mapped using `snippy-core`.
 For this exercise, we will again retrieve our data from the github folder:
 
 ```
-cp ~/github_repository/course_data_2025/mapping_and_phylo/old.snippy.runs_2025.tar.gz .
+cp ~/github_repository/course_data_2026/mapping_and_phylo/old.snippy.runs.tar.gz .
 ```
 Check the files are there:
 ```
