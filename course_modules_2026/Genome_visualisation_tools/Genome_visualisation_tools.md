@@ -7,7 +7,7 @@
 
 # Genome Visualisation tools - Dublin 2026 <!-- omit in toc -->
 
-### Module Lead: Marcela Suarez Esquivel <!-- omit in toc -->
+### Module Lead: Matt Dorman <!-- omit in toc -->
 
 ## Table of contents <!-- omit in toc -->
 - [Introduction](#introduction)
