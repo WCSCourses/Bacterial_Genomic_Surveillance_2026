@@ -318,7 +318,7 @@ Use the *File manager* to drag and drop files into the `act' file window:
 
 
 
-![act_GAS_start](2026_act_GAS_start.png)
+![act_GAS_start](2026_act_GAS_load.png)
 
 
 
