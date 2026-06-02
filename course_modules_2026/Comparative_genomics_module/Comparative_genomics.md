@@ -6,7 +6,7 @@
 
 # Comparative genomics - Dublin 2026 <!-- omit in toc -->
 
-### Module Lead: Marcela Suarez Esquivel <!-- omit in toc -->
+### Module Lead: Marcela Suárez-Esquivel <!-- omit in toc -->
 <br>
 
 # Table of contents <!-- omit in toc -->
@@ -71,7 +71,7 @@ ls -l
 <br>
 
 
-![directory_contents](Directory_ls_start.png)
+![directory_contents](2026_Directory_ls_start.png)
 
 
 <br>
@@ -104,7 +104,7 @@ Start `act` from the terminal window by typing `act &`
 Click *File* then *Open*
 
 
-![act start up 1](act_start_1.png)
+![act start up 1](2026_act_start_1.png)
 
 
 Use the *File manager* to drag and drop files into the `act` file window:
@@ -119,7 +119,7 @@ Alternatively you could select the files from the *Choose* option in the `act' f
 Once you have filled all the boxes, click the *Apply* button.
 
 
-![act start up 2](act_start_2.png)
+![act start up 2](2026_act_start_2.png)
 
 <br>
 
@@ -253,7 +253,7 @@ cd GAS_ACT
 If you type `ls` you will be able to see the contents of the directory:
 
 
-![terminal view GAS](terminal_GAS.png)
+![terminal view GAS](2026_terminal_GAS.png)
 
 
 In the folder you will see a pdf file of a publication describing the genome of an _emm_ type 5 isolate of GAS, Manfredo (`Holden _et al_., 2007 https://journals.asm.org/doi/10.1128/JB.01227-06). In the publication the chromosome of Manfredo is compared to the chromosomes of 4 other GAS isolates (MGAS315, SSI-1, MGAS10394 and MGAS8232) and displayed in figure generated from `act` (Figure 2).
@@ -318,7 +318,7 @@ Use the *File manager* to drag and drop files into the `act' file window:
 
 
 
-![act_GAS_start](act_GAS_start.png)
+![act_GAS_start](2026_act_GAS_start.png)
 
 
 
