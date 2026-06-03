@@ -1020,8 +1020,9 @@ In this example, we are going to use `bakta` as this is a new tool that generate
 ## Step 14. Genomic annotation using `bakta`
 
 `bakta` has been installed using `conda`, and works in the base environment. 
-It is needed to update one of the databases called "amrfinder:
-<br
+It is needed to update one of the databases called amrfinder:
+
+<br>
 
 ```bash
 amrfinder_update --force_update --database bakta_database/db-light/amrfinderplus-db
