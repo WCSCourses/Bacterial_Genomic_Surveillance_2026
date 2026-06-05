@@ -594,7 +594,7 @@ Use the `File -> Open` menu and navigate to the `Module_4_Mapping_Phylogeny` and
 
 <br>
 
-![figtree.1](2026_figtree_launch.png)
+![figtree.1](2026_figtree_lauch.png)
 
 
 
