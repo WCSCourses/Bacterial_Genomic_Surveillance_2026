@@ -574,7 +574,7 @@ To examine our tree, we can look at the text file:
 ```
 cat clean.full.SNPs.aln.tre
 ```
-![iqtree.4](2026_iqtree_less-newick-file.png)
+![iqtree.4](2026_iqtree-less-newick-file.png)
 
 But this is not very helpful - it's just raw text in 'newick' format. 
 
