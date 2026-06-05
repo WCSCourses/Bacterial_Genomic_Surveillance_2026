@@ -508,7 +508,7 @@ We will use `snp-sites` (https://github.com/sanger-pathogens/snp-sites) to do th
 ```
 snp-sites
 ```
-![snp-sites.1](snp-sites.help__2024.png)
+![snp-sites.1](2026_snp-sites.help.png)
 
 First, remove all the invariant sites and create a SNP-only multiple sequence alignment. In the following command, we:
  - Specify the name of an output file `-o clean.full.SNPs.aln`
@@ -522,7 +522,7 @@ snp-sites -o clean.full.SNPs.aln clean.full.aln
 We can also use snp-sites to find out how many invariant sites were removed (and what proportion of A, T, G, C they were). Use `snp-sites -C` to do this for the file above.
 
 
-![snp-sites.2](snp-sites_run__2024.png)
+![snp-sites.2](2026_snp-sites_run.png)
 
 <br>
 
@@ -531,7 +531,7 @@ We can look at the options for `IQ-TREE` (https://github.com/iqtree/iqtree2) bel
 ```
 iqtree -h
 ```
-![iqtree.1](iqtree-help__2024.png)
+![iqtree.1](2026_iqtree-help.png)
 
 <br>
 
@@ -548,7 +548,7 @@ In the command below, we:
 iqtree -s clean.full.SNPs.aln -fconst $( snp-sites -C clean.full.aln ) -m GTR+F+I -T 2 -mem 2G -B 1000 -o M66
 ```
 
-![iqtree.2](iqtree-run.1__2024.png)
+![iqtree.2](2026_iqtree-run.1.png)
 
 <br>
 
@@ -556,7 +556,7 @@ Look at folder
 ```
 ls -lh clean.full.*
 ```
-![iqtree.3](iqtree_-ls-after__2024.png)
+![iqtree.3](2026_iqtree_-ls-after.png)
 
 <br>
 
@@ -574,7 +574,7 @@ To examine our tree, we can look at the text file:
 ```
 cat clean.full.SNPs.aln.tre
 ```
-![iqtree.4](iqtree_less-newick-file__2024.png)
+![iqtree.4](2026_iqtree_less-newick-file.png)
 
 But this is not very helpful - it's just raw text in 'newick' format. 
 
@@ -594,7 +594,7 @@ Use the `File -> Open` menu and navigate to the `Module_4_Mapping_Phylogeny` and
 
 <br>
 
-![figtree.1](figtree_launch__2024.png)
+![figtree.1](2026_figtree_launch.png)
 
 
 
@@ -694,7 +694,7 @@ Now we can run `gubbins`
 run_gubbins.py -h
 ```
 
-![gubbins.1](gubbins-help__2024.png)
+![gubbins.1](2026_gubbins-help.png)
 
 <br>
 
@@ -707,11 +707,11 @@ This command can take a few minutes to run.
 run_gubbins.py -c 4 -p gubbins clean2.full.aln
 ```
 
-![run_gubbins_hanging](gubbins-run-hanging-screen__2024.png)
+![run_gubbins_hanging](2026_gubbins-run-hanging-screen.png)
 
 <br>
 
-![run_gubbins_hanging](gubbins-run-finished-screen__2024.png)
+![run_gubbins_hanging](2026_gubbins-run-finished-screen.png)
 
 
 <br>
@@ -740,7 +740,7 @@ Lets look at what gubbins has done
 ls -l gubbins.*
 ```
 
-![gubbins.backup.files](gubbins_backup_files__2024.png)
+![gubbins.backup.files](2026_gubbins_backup_files.png)
 
 
 <br>
@@ -751,7 +751,7 @@ For example `gubbins.recombination_predictions.gff` is a `gff` file that contain
 head gubbins.recombination_predictions.gff
 ```
 
-![gubbins.3](gubbins_view-gff__2024.png)
+![gubbins.3](2026_gubbins_view-gff.png)
 
 
 <br>
@@ -760,7 +760,7 @@ head gubbins.recombination_predictions.gff
 ```
 head gubbins.filtered_polymorphic_sites.fasta
 ```
-![gubbins.4](gubbins_polymorphic-sites__2024.png)
+![gubbins.4](2026_gubbins_polymorphic-sites.png)
 
 <br>
 
