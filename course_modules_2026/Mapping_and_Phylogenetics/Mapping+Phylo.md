@@ -548,7 +548,7 @@ In the command below, we:
 iqtree -s clean.full.SNPs.aln -fconst $( snp-sites -C clean.full.aln ) -m GTR+F+I -T 2 -mem 2G -B 1000 -o M66
 ```
 
-![iqtree.2](2026_iqtree-run.1.png)
+![iqtree.2](2026_iqtree-run1.png)
 
 <br>
 
