@@ -508,7 +508,7 @@ We will use `snp-sites` (https://github.com/sanger-pathogens/snp-sites) to do th
 ```
 snp-sites
 ```
-![snp-sites.1](2026_snp-sites.help.png)
+![snp-sites.1](2026_snp-sites-help.png)
 
 First, remove all the invariant sites and create a SNP-only multiple sequence alignment. In the following command, we:
  - Specify the name of an output file `-o clean.full.SNPs.aln`
