@@ -247,7 +247,7 @@ Examine results of `snippy`
 ls -lh new-sample-1/
 ```
 
-![snippy.run1.output](Module_4/snippy-pst_ls__2026.png)
+![snippy.run1.output](snippy-pst_ls__2026.png)
 
 You can examine the log file to see exactly what `snippy` has done
 
@@ -323,7 +323,7 @@ We can view a slightly easier summary of these variants in the snps.tab file
 ```
 head -5 new-sample-1/snps.tab
 ```
-![snippy.run1.snps](Module_4/snippy-snps.tab__2026.png)
+![snippy.run1.snps](snippy-snps.tab__2026.png)
 
 In this file, we have not provided gene information, so only the first 6 columns are relevant
 
@@ -371,7 +371,7 @@ The reads are hosted in the course GitHub repository. If that has been updated o
 ls -lh ~/github_repository/course_data_2025/mapping_and_phylo/
 ```
 
-![github.repo.ls](github.repo.ls__2026.png)
+![github.repo.ls](Module_4/github.repo.ls__2026.png)
 
 If the files are missing, check with the instructors.
 
@@ -447,7 +447,7 @@ We can see that we now have a new directory `old.snippy.runs_2024`
 ```
 ls -lh
 ```
-![snippy-context.tar.ls1](Module_4/untar.old-snippy-files.ls__2026.png)
+![snippy-context.tar.ls1](untar.old-snippy-files.ls__2026.png)
 
 ```
 ls -lh old.snippy.runs_2024
