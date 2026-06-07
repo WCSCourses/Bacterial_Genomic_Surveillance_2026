@@ -24,18 +24,18 @@
 | [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) | 0.12.1 | Genome Annotation | Conda base |
 | [Trim Galore](https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/) | 0.6.10 | Genome Annotation | `conda activate ariba-env` |
 | [ARIBA](https://github.com/sanger-pathogens/ariba) | 2.14.6 | Genome Annotation | `conda activate ariba-env` |
-| [SPAdes](https://github.com/ablab/spades) | 3.15.5 | Genome Annotation | `conda activate abacas-env` |
-| [ABACAS](https://abacas.sourceforge.net/) | 1.3.1 | Genome Annotation | `conda activate abacas-env` |
+| [SPAdes](https://github.com/ablab/spades) | 3.15.5 | Genome Annotation | Conda base |
+| [ABACAS](https://abacas.sourceforge.net/) | 1.3.1 | Genome Annotation | Conda base |
 | [BLAST+](https://blast.ncbi.nlm.nih.gov/) | Latest installed | Genome Annotation | Conda base |
 | [Bakta](https://bakta.computational.bio/) | Latest installed | Genome Annotation | Conda base |
 | [RATT](https://github.com/sanger-pathogens/RATT) | Latest installed | Comparative Genomics | Conda base |
 | [Filtlong](https://github.com/rrwick/Filtlong) | 0.2.1 | Sequencing & QC | Conda base |
-| [NanoPlot](https://github.com/wdecoster/NanoPlot) | 1.44.1 | Sequencing & QC | `conda activate roary` |
-| [Roary](https://github.com/sanger-pathogens/Roary) | Latest installed | Pan-genome Analysis | `conda activate roary` |
-| [Panaroo](https://github.com/gtonkinhill/panaroo) | 1.1.2 | Pan-genome Analysis | `conda activate panaroo` |
+| [NanoPlot](https://github.com/wdecoster/NanoPlot) | 1.44.1 | Sequencing & QC | Conda base |
+| [Roary](https://github.com/sanger-pathogens/Roary) | Latest installed | Pan-genome Analysis | `conda activate roary-env` |
+| [Panaroo](https://github.com/gtonkinhill/panaroo) | 1.1.2 | Pan-genome Analysis | `conda activate panaroo-env` |
 | [Docker](https://www.docker.com/) | 28.2.2 | Containerisation | System installation |
 | [Kraken2](https://github.com/DerrickWood/kraken2) | Latest installed | Taxonomic Classification | `conda activate kraken2-env` |
-| [Kraken2 Standard-8 Database](https://benlangmead.github.io/aws-indexes/k2/) | 20260226 release | Taxonomic Classification | `conda activate kraken2-env` |
+| [Kraken2 Standard-8 Database](https://benlangmead.github.io/aws-indexes/k2/) | 20260226 release | Taxonomic Classification | `/home/vboxuser/databases/kraken2/standard8` |
 
 ## Conda Environments
 
