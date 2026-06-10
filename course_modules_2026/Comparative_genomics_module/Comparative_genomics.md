@@ -307,7 +307,7 @@ Use the *File manager* to drag and drop files into the `act' file window:
 
 * Drag `MGAS315.embl` into the *Sequence file 1* box
 * Drag `MGAS315_vs_SSI-1.crunch` into the *Comparison file 1* box
-* Drag `SSI-1` into the *Sequence file 2* box
+* Drag `SSI-1.embl` into the *Sequence file 2* box
 * Drag `SSI-1_vs_Manfredo.crunch` into the *Comparison file 2* box
 * Drag `Manfredo.embl` into the *Sequence file 3* box
 * Drag `Manfredo_vs_MGAS10394.crunch` into the *Comparison file 3* box
