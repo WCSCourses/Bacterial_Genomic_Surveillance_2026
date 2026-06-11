@@ -659,19 +659,7 @@ The sequence we are going to use as a reference belongs to an ST1 MSSA strain, M
 
 The tool `abacas` uses `MUMMER` to map contigs to a reference genome. This process aligns contigs to their most similar regions in the reference genome, and it primarily aims to reconstruct the overall order and orientation of contigs to form a more complete genome assembly. 
 
-<br>
-
-`abacas` has been installed using `conda`. We must activate the relavent conda environment before running any commands using `abacas`.
-
-<br>
-
-```bash
-conda activate abacas-env
-```
-
-<br>
-
-We are going to reorder the 16B assembly against the MSSA476 reference using `abacas`. We do this by calling the `abacas.pl` script with the following parameters:
+We are going to reorder the 16B assembly against the MSSA476 reference using `abacas`. We do this by calling the `abacas` script with the following parameters:
 
 - Specify the reference sequence in a single fasta file
     - `-r MSSA476.dna`
@@ -688,12 +676,12 @@ We are going to reorder the 16B assembly against the MSSA476 reference using `ab
 - Specify the prefix for the output file name
     - `-o 16B.ordered`
 
-To see a complete list of the options available, you can type the command: `abacas.pl -h`
+To see a complete list of the options available, you can type the command: `abacas -h`
 
 <br>
 
 ```bash
-abacas.pl -r MSSA476.dna -q 16B_assembly/assembly.fasta -p nucmer -d -b -a -o 16B.ordered
+abacas -r MSSA476.dna -q 16B_assembly/assembly.fasta -p nucmer -d -b -a -o 16B.ordered
 ```
 
 <br>
