@@ -724,18 +724,6 @@ Should return:
 1
 ```
 
-<br>
-
-
-We must now deactivate the `abacas` `conda` environment. Failure to deactivate the environment will prevent usage of downstream tools.
-
-<br>
-
-```bash
-conda deactivate
-```
-
-<br>
 
 ## Step 10. Identify highly similar regions using `blastn` (16B vs MSSA476)
 
