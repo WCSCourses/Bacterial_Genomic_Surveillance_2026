@@ -489,7 +489,7 @@ Being inside Module_1_Sequencing_QC folder, run the following commands:
 
     conda activate multiqc-env
     
-    multiqc fastq_raw kraken2
+    multiqc fastqc_raw kraken2
 
 See summarized report in a browser:
 
