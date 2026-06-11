@@ -883,7 +883,9 @@ conda activate snippy-env
 ```bash
 snippy --outdir 16B_mapping --R1 16B_1.fastq --R2 16B_2.fastq --ref 16B.ordered.fasta --cpus 4 --ram 4 --force --quiet
 ```
-
+```bash
+conda deactivate
+```
 <br>
 
 <p align="center">
