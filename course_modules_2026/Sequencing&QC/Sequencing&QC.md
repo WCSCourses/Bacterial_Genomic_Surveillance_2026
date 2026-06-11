@@ -362,7 +362,7 @@ mkdir kraken2
 ```
 
 ```
-conda activate kraken2
+conda activate kraken2-env
 ```
 
 ```
