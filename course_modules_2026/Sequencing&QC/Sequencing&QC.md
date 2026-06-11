@@ -366,7 +366,7 @@ conda activate kraken2-env
 ```
 
 ```
-kraken2 -db /home/manager/kraken2_database --threads 2 --gzip-compressed --paired --report kraken2/CNGB1553_kraken2.txt --use-names CNGB1553_S31_L001_R1_001.fastq.gz CNGB1553_S31_L001_R2_001.fastq.gz
+kraken2 -db /home/vboxuser/databases/kraken2/standard8 --threads 2 --gzip-compressed --paired --report kraken2/CNGB1553_kraken2.txt --use-names CNGB1553_S31_L001_R1_001.fastq.gz CNGB1553_S31_L001_R2_001.fastq.gz
 ```
 -db = name for Kraken2 database
 
