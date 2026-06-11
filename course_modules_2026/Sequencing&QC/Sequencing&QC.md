@@ -481,8 +481,14 @@ Adapt the previous code to run NanoPlot on the newly created long-read filtered 
 
 [**MultiQC**](https://multiqc.info/) is a tool that summarises different types of NGS reports. It is really interesting for visualising many FastQC and kraken2 reports at once.
 
-Being inside Module_1_Sequencing_QC folder, run the following command:
+As multiqc is not installed, we can create a new conda environment and install it all at once:
 
+    conda create -n multiqc-env -c bioconda -c conda-forge multiqc
+
+Being inside Module_1_Sequencing_QC folder, run the following commands:
+
+    conda activate multiqc-env
+    
     multiqc fastq_raw kraken2
 
 See summarized report in a browser:
