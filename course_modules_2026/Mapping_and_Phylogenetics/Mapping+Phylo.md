@@ -380,7 +380,7 @@ If the files are missing, check with the instructors.
 Assuming they are available, we can copy the assemblies to our current working directory to make things easier:
 
 ```
-cp ~/github_repository/course_data_2026/mapping_and_phylo/CTMA_1441.* .
+cp ~/github_repository/course_data_2025/mapping_and_phylo/CTMA_1441.* .
 ```
 
 <br>
@@ -425,7 +425,7 @@ We can add this genome to a collection of genomes mapped using `snippy-core`.
 For this exercise, we will again retrieve our data from the github folder:
 
 ```
-cp ~/github_repository/course_data_2026/mapping_and_phylo/old.snippy.runs.tar.gz .
+cp ~/github_repository/course_data_2025/mapping_and_phylo/old.snippy.runs.tar.gz .
 ```
 Check the files are there:
 ```
@@ -542,7 +542,9 @@ In the command below, we:
  - tell `IQ-TREE` to use a maximum of 2 CPUs (threads) `-T 2` (note that this can be tuned, although increasing the number of cores does not always speed things up. In your own work you can test the optimal number of cores using `-T AUTO`).
  - tell `IQ-TREE` to use a maximum of 2GB memory (note that this can be tuned - increased memory may be required for some runs). 
  - perform 1000 ultrafast bootstraps `-B 1000`. 
- - use sample `M66` as an outgroup `-o M66`. Note that this is specific to the current exercise, and does not necessarily always need to be used. 
+ - use sample `M66` as an outgroup `-o M66`. Note that this is specific to the current exercise, and does not necessarily always need to be used.
+
+If you have the snippy environment active, run "conda deactivate" first.
 
 ```
 iqtree -s clean.full.SNPs.aln -fconst $( snp-sites -C clean.full.aln ) -m GTR+F+I -T 2 -mem 2G -B 1000 -o M66
@@ -615,7 +617,7 @@ Examine the tree:
 <br>
 
 ## Adjusting a dataset to remove a poor quality genome
-The unpolished long-read assembly `CTMA_1441.long_nopolish` is filled with uncorrected errors. We therefore should not use it in our analysis. We will also remove the duplicate examples of CTMA_1441, so we are only using a single example. We can rerun `snippy-core` to rebuild the alignment without the unnecessary samples:
+The unpolished long-read assembly `CTMA_1441.long_nopolish` is filled with uncorrected errors. We therefore should not use it in our analysis. We will also remove the duplicate examples of CTMA_1441, so we are only using a single example. We can rerun `snippy-core` to rebuild the alignment without the unnecessary samples (remember to activate the conda environment):
 ```
 snippy-core --ref references/Vibrio_cholerae_O1_biovar_eltor_str_N16961_v2.fa old.snippy.runs_2024/* new-sample-1 new-sample-2
 ```
@@ -837,6 +839,7 @@ In the command below, we:
   * `-p optimise.baps`
 * specify an existing phylogenetic tree that we want to use for conditioning the statistical model. This option is not essential, but it ensures that the tree and the clusters are consistent with one another.
   * `--phylogeny gubbins.final_tree.tre`
+* remember to deactivate the conda environment (do it until it returns to base). 
 ```
 run_fastbaps -i gubbins.filtered_polymorphic_sites.fasta -o fastbaps.clusters --levels 2 -p optimise.baps --phylogeny gubbins.final_tree.tre
 ```
