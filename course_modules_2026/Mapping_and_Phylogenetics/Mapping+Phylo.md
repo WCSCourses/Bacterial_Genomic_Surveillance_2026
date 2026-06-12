@@ -846,7 +846,7 @@ run_fastbaps -i gubbins.filtered_polymorphic_sites.fasta -o fastbaps.clusters --
 
 We can view the output using `head` or `cat`
 
-![fastbaps.command](run-fastbaps__2025.png)
+![fastbaps.command](2026_run-fastbaps.png)
 
 <br>
 
@@ -864,7 +864,7 @@ sed s/Isolates/ID/ fastbaps.clusters > fastbaps.clusters.fixid.csv
 head fastbaps.clusters.fixid.csv
 ```
 
-![fastbaps.fixid.code](fastbaps.fixid__2025.png)
+![fastbaps.fixid.code](2026_fastbaps.fixid.png)
 
 
 <br>
