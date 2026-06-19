@@ -82,7 +82,7 @@ You can examine the contents of this directory:
 ls -lh
 ```
 
-![ls_module_start](Assembly_Comp_ls_module_start_2025.png)
+![ls_module_start](https://github.com/WCSCourses/Bacterial_Genomic_Surveillance_2026/blob/main/course_modules_2026/Module_5_Part1/Assembly_Comp_ls_module_start_2026.png)
 
 <br>
 
@@ -143,7 +143,7 @@ An assembly has already been made using `S_aureus_JKD6159_Illumina.s100.ds500000
 unicycler -t 4 -1 S_aureus_JKD6159_Illumina.s100.ds500000-reads_1.fastq.gz -2 S_aureus_JKD6159_Illumina.s100.ds500000-reads_2.fastq.gz -o S_aureus_JKD6159.s100.unicycler.short
 ```
 
-![unicycler.short.running](Unicycler-short.running.png)
+![unicycler.short.running](https://github.com/WCSCourses/Bacterial_Genomic_Surveillance_2026/blob/main/course_modules_2026/Module_5_Part1/Unicycler-short.running.png)
 
 <br>
 
@@ -174,7 +174,7 @@ An assembly has already been made using `S_aureus_JKD6159_ONT_R10.4_guppy_v6.1.7
 unicycler -t 4 -l S_aureus_JKD6159_ONT_R10.4_guppy_v6.1.7__filt.s100.ds10000.fastq.gz -o S_aureus_JKD6159.s100.unicycler.long
 ```
 
-![unicycler.long.running](Unicycler-long.running.png)
+![unicycler.long.running](https://github.com/WCSCourses/Bacterial_Genomic_Surveillance_2026/blob/main/course_modules_2026/Module_5_Part1/Unicycler-long.running.png)
 
 <br>
 
@@ -212,7 +212,7 @@ A hybrid assembly has already been been made using `S_aureus_JKD6159_Illumina.s1
 unicycler -t 4 -1 S_aureus_JKD6159_Illumina.s100.ds500000-reads_1.fastq.gz -2 S_aureus_JKD6159_Illumina.s100.ds500000-reads_2.fastq.gz -l S_aureus_JKD6159_ONT_R10.4_guppy_v6.1.7__filt.s100.ds10000.fastq.gz -o S_aureus_JKD6159.s100.unicycler.hybrid
 ```
 
-![unicycler.hybrid.running](Unicycler-hybrid.running.png)
+![unicycler.hybrid.running](https://github.com/WCSCourses/Bacterial_Genomic_Surveillance_2026/blob/main/course_modules_2026/Module_5_Part1/Unicycler-hybrid.running.png)
 
 <br>
 
@@ -275,7 +275,7 @@ In the command below we:
 dragonflye --cpus 4 --ram 4 --gsize 2.8M --reads S_aureus_JKD6159_ONT_R10.4_guppy_v6.1.7__filt.s100.ds10000.fastq.gz --outdir S_aureus_JKD6159.s100.ds10000.dragonflye.long
 ```
 
-![dragonflye.long.running](Dragonflye-long.running.png)
+![dragonflye.long.running](https://github.com/WCSCourses/Bacterial_Genomic_Surveillance_2026/blob/main/course_modules_2026/Module_5_Part1/Dragonflye-long.running.png)
 
 
 <br>
@@ -326,7 +326,7 @@ In the command below we:
 dragonflye --cpus 4 --ram 4 --gsize 2.8M --reads S_aureus_JKD6159_ONT_R10.4_guppy_v6.1.7__filt.s100.ds10000.fastq.gz --R1 S_aureus_JKD6159_Illumina.s100.ds500000-reads_1.fastq.gz --R2 S_aureus_JKD6159_Illumina.s100.ds500000-reads_2.fastq.gz --outdir S_aureus_JKD6159.s100.ds10000.dragonflye.hybrid --pilon 1 --polypolish 1 
 ```
 
-![dragonflye.hybrid.running](Dragonflye-hybrid.running.png)
+![dragonflye.hybrid.running](https://github.com/WCSCourses/Bacterial_Genomic_Surveillance_2026/blob/main/course_modules_2026/Module_5_Part1/Dragonflye-hybrid.running.png)
 
 <br>
 
@@ -431,7 +431,7 @@ And for `dragonflye`:
 quast.py --threads 4 -R ../S_aureus_JKD6159.fasta --output-dir quast.output contigs.fa
 ```
 
-![quast.run.pic](quast.run.png)
+![quast.run.pic](https://github.com/WCSCourses/Bacterial_Genomic_Surveillance_2026/blob/main/course_modules_2026/Module_5_Part1/quast.run.png)
 
 <br>
 
@@ -447,7 +447,7 @@ Lets take a look at some of them:
 cat quast.output/report.tsv
 ```
 
-![quast.report.cat](quast.output.png)
+![quast.report.cat](https://github.com/WCSCourses/Bacterial_Genomic_Surveillance_2026/blob/main/course_modules_2026/Module_5_Part1/quast.output.png)
 
 
 ```
