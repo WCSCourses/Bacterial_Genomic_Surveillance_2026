@@ -439,7 +439,7 @@ We can add this genome to a collection of genomes mapped using `snippy-core`.
 For this exercise, we will again retrieve our data from the github folder:
 
 ```
-cp ~/github_repository/course_data_2025/mapping_and_phylo/old.snippy.runs.tar.gz .
+cp ~/github_repository/course_data_2025/mapping_and_phylo/old.snippy.runs_2025.tar.gz .
 ```
 Check the files are there:
 ```
