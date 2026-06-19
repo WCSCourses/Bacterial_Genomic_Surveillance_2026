@@ -214,6 +214,20 @@ The folder contains:
 ## Perform mapping of reads to reference genome using snippy
 `Snippy` (https://github.com/tseemann/snippy) is an integrated pipeline that maps reads to a reference genome and produces a range of outputs. For the purposes of this tutorial, we will use `snippy` to organise analyse our genomes.
 
+Before we start, we will create a new, separate environment for snippy to avoid problems with its dependencies. We will use conda for that purpose:
+
+```
+conda create -n snippy-fixed -c bioconda -c conda-forge snippy=4.6.0 vcflib=1.0.1 tabixpp=1.1.0 –yes
+```
+
+As you can see, we can indicate conda the name of the new environment (-n) and which specific software versions we need (=X.X.X). Now that the environment exists, we can activate it using:
+
+```
+conda activate snippy-fixed
+```
+
+If this command succeeds, your prompt line in the terminal will start with (snippy-fixed) and we can continue
+
 You can view the options for snippy using the following code:
 ```
 snippy -h
