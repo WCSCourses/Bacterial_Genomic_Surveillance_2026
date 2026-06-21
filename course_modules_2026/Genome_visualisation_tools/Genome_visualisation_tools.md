@@ -40,11 +40,7 @@ Artemis is a DNA viewer and annotation tool, free to download and use, written b
 
 ### 1. Starting up the Artemis software
 
-To launch Artemis, open your terminal window and type:
-
-```
-art &
-```
+To launch Artemis, go on to "show apps" on the left hand side of menu bar and click on the "dna" artemis icon:
 
 A small start-up window will appear (see figure below). The directory for Module 2 contains all files you will need for this module. Please ask if you cannot find it on your computer. Now follow the sequence of numbers in the figure below to load up the *Salmonella* Typhi chromosome sequence. Ask a demonstrator for help if you have any problems.
 
