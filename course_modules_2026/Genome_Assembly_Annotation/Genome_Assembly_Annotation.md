@@ -877,7 +877,7 @@ First we will run `snippy` with the following parameters:
 <br>
 
 ```bash
-conda activate snippy-env
+conda activate snippy-fixed
 ```
 
 ```bash
