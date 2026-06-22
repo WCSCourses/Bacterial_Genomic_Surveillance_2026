@@ -100,8 +100,6 @@ In the folder the files you will need for this exercise are:
 
 To launch ACT, go on to "show apps" on the left hand side of menu bar and click on the "dna" ´Artemis Comparison Tool` icon.  A small start-up window will appear (see figure below).
 
-A small start-up window will appear (see figure below).
-
 
 Click *File* then *Open*
 
