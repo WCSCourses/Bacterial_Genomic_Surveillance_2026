@@ -454,7 +454,7 @@ conda activate kraken2-env
 ```
 
 ```
-kraken2 -db /home/manager/kraken2_database --threads 4 --gzip-compressed --report kraken2/CTMA_1441_kraken2.txt --use-names CTMA_1441_longds.fastq.gz
+kraken2 -db /home/vboxuser/databases/kraken2/standard8 --threads 4 --gzip-compressed --report kraken2/CTMA_1441_kraken2.txt --use-names CTMA_1441_longds.fastq.gz
 ```
 
 ```
