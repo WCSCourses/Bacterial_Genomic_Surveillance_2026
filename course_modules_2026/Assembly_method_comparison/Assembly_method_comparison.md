@@ -136,6 +136,7 @@ In the command below we:
     - `-o <dir>`
 
 <br>
+We will run the assemblers from dedicated conda environments. To activate the unicycler environment, please type: conda activate unicycler-env
 
 An assembly has already been made using `S_aureus_JKD6159_Illumina.s100.ds500000-reads` :
 
