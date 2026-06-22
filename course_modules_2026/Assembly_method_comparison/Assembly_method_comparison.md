@@ -464,7 +464,7 @@ Add your assembly metrics to the google sheet at https://docs.google.com/spreads
 
 <br>
 
-(2026_assembly-metrics.googlesheet.png)
+![assembly.googlesheet](2026_assembly-metrics.googlesheet.png.png)
 
 
 <br>
