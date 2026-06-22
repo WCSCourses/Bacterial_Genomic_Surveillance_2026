@@ -450,7 +450,7 @@ firefox nanoplot/CTMA_1441_longds/CTMA_1441_longds_NanoPlot-report.html &
 Before continuing, we will check there are no contaminations in this dataset:
 
 ```
-conda activate kraken2
+conda activate kraken2-env
 ```
 
 ```
