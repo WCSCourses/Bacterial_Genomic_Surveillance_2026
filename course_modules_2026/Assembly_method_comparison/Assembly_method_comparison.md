@@ -137,8 +137,9 @@ In the command below we:
 
 <br>
 
-We will run the assemblers from dedicated conda environments. To activate the unicycler environment, please type: conda activate unicycler-env
+We will run the assembler from a dedicated conda environment. You can check all available environments with the command: conda env list
 
+Now, to activate the unicycler environment, type: conda activate unicycler-env
 
 An assembly has already been made using `S_aureus_JKD6159_Illumina.s100.ds500000-reads` :
 
@@ -209,10 +210,6 @@ In the command below we:
 - Specify a directory to output files to
     - `-o <dir>`
 
-We will run the assembler from a dedicated conda environment. You can check all available environments with the command: conda env list
-
-Now, to activate the unicycler environment, type: conda activate unicycler-env
-
 A hybrid assembly has already been been made using `S_aureus_JKD6159_Illumina.s100.ds500000-reads_<1/2>`, and `S_aureus_JKD6159_ONT_R10.4_guppy_v6.1.7__filt.s100.ds10000.fastq.gz`:
 ```
 unicycler -t 4 -1 S_aureus_JKD6159_Illumina.s100.ds500000-reads_1.fastq.gz -2 S_aureus_JKD6159_Illumina.s100.ds500000-reads_2.fastq.gz -l S_aureus_JKD6159_ONT_R10.4_guppy_v6.1.7__filt.s100.ds10000.fastq.gz -o S_aureus_JKD6159.s100.unicycler.hybrid
@@ -230,7 +227,7 @@ Try running your own assembly using:
   - `S_aureus_JKD6159_ONT_R10.4_guppy_v6.1.7__filt.s200.ds2500.fastq.gz` and `S_aureus_JKD6159_Illumina.s200.ds500000-reads_<1/2>` or
   - `S_aureus_JKD6159_ONT_R10.4_guppy_v6.1.7__filt.s300.ds2500.fastq.gz` and `S_aureus_JKD6159_Illumina.s300.ds500000-reads_<1/2>` or
 
-Your instructor will tell you which one you should run.
+Your instructor will tell you which one you should run (check in github the task assigment sheet saved in the course_data_2026/assembly_data folder).
 
 <br>
 <br>
