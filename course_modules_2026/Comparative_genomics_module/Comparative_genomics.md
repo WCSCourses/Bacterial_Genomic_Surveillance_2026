@@ -109,9 +109,9 @@ Click *File* then *Open*
 
 Use the *File manager* to drag and drop files into the `act` file window:
 
-* Drag `EcK12.dna` into the *Sequence file 1* box
+* Drag `S_typhi.dna` into the *Sequence file 1* box
 * Drag `S_typhi.dna_vs_EcK12.dna.crunch` into the *Comparison file 1* box
-* Drag `S_typhi.dna` into the *Sequence file 2* box
+* Drag `EcK12.dna` into the *Sequence file 2* box
 
 
 Alternatively you could select the files from the *Choose* option in the `act' file window
