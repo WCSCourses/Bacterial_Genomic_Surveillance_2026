@@ -227,7 +227,7 @@ Try running your own assembly using:
   - `S_aureus_JKD6159_ONT_R10.4_guppy_v6.1.7__filt.s200.ds2500.fastq.gz` and `S_aureus_JKD6159_Illumina.s200.ds500000-reads_<1/2>` or
   - `S_aureus_JKD6159_ONT_R10.4_guppy_v6.1.7__filt.s300.ds2500.fastq.gz` and `S_aureus_JKD6159_Illumina.s300.ds500000-reads_<1/2>` or
 
-Your instructor will tell you which one you should run (check in github the task assigment sheet saved in the course_data_2026/assembly_data folder).
+Your instructor will tell you which one you should run (https://drive.google.com/drive/folders/1VxqeBL4StGThxfBAKrwzj5Kl1HIdIKC7?usp=drive_link).
 
 <br>
 <br>
