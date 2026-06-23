@@ -781,7 +781,7 @@ blastn -query 16B.ordered.fasta -db MSSA476 -out MSSA476.dna_vs_16B.ordered.fast
 
 ## Step 11. Explore local genomeic matches in `act`
 
-We are now going to look at the `abacus` ordered 16B assembly in `act` with the `blastn` comparison file we have just generated.
+We are now going to look at the `abacas` ordered 16B assembly in `act` with the `blastn` comparison file we have just generated.
 
 
 We will run `act` with the following parameters:
@@ -793,13 +793,10 @@ We will run `act` with the following parameters:
 - The ordered genomic assembly for 16B
   - `16B.ordered.fasta`
 
-<br>
+To launch act, go on to "show apps" on the left hand side of menu bar and click on the "dna" act icon:
 
-```bash
-act MSSA476.embl MSSA476.dna_vs_16B.ordered.fasta.tsv 16B.ordered.fasta &
-```
+`Press file, then open, and then choose MSSA476.embl as sequence 1 file,  MSSA476.dna_vs_16B.ordered.fasta.tsv as comparison file 1, and 16B.ordered.fasta as sequence 2 file `
 
-<br>
 
 Here, you will see 3 tracks. The first track shows the annotations. The second track shows the mapped regions between MSSA476 and 16B (this is the outputs from blastn), and the third track is the fasta sequence of 16B. Each track has a slider on the right hand side allowing you to modify the view. Moving the slider for track 2 controls the minimum length of a mapped region for it to be displayed on screen. In the view below, the shortest mapped regions have been hidden. Moving the slider for track 3 controls how much of the genome of 16B is in view. Use this to zoom out and see the entire genome. Double clicking on a mapped region will move the view sothat the mapped region is in the centre of the view. Making these modifications, you should see a similar output as below.
 
@@ -1175,13 +1172,8 @@ blastn -query MW2.dna -db 16B.ordered -out 16B.ordered.fasta_vs_MW2.dna.tsv -out
 
 We are now going to load up the three sequences and relevant comparison files into `act`. You can do this either from the command line or by clicking on the ACT icon. If you prefer to do it from the command line you can type:
 
-<br>
+`Press file, then open, and then choose MSSA476.embl as sequence 1 file,  MSSA476.dna_vs_16B.ordered.fasta.tsv as comparison file 1, and 16B.ordered.fasta as sequence 2 file, then press more files, and use 16B.ordered.fasta_vs_MW2.dna.tsv as comparison file 2, and MW2.embl as sequence file 3 `
 
-```bash
-act MSSA476.embl MSSA476.dna_vs_16B.ordered.fasta.tsv 16B.ordered.embl 16B.ordered.fasta_vs_MW2.dna.tsv MW2.embl &
-```
-
-<br>
 
 Now that you have included the MW2 sequence to the comparison you should see an `act` view with three DNA panels and two comparison panels separating them. In this zoomed out view, MSSA476 is on the top, 16B is in the middle and MW2 on the bottom. You will also notice that in the `act` menu at the top there are now three entry options. 
 
