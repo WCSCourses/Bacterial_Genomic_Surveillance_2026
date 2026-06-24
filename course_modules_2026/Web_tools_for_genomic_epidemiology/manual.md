@@ -12,13 +12,14 @@
 -   [Background](#background)
 -   [Introduction](#introduction)
 -   [Objectives](#objectives)
-    -   [Collect field data with Epicollect](#collect-field-data-with-epicollect)
-    -   [Analyse genomes with PathogenWatch](#analyse-genomes-with-pathogenwatch)
-    -   [Merge data with Data-flo](#merge-data-with-data-flo)
-    -   [Explore phylogenetic and epidemiological data with Microreact](#explore-phylogenetic-and-epidemiological-data-with-microreact)
+    -   [1. Collect field data with Epicollect](#1-collect-field-data-with-epicollect)
+    -   [2. Analyse genomes with Pathogenwatch](#2-analyse-genomes-with-pathogenwatch)
+    -   [3. Merge data with Data-flo](#3-merge-data-with-data-flo)
+    -   [4. Explore phylogenetic and epidemiological data with Microreact](#4-explore-phylogenetic-and-epidemiological-data-with-microreact)
+    -   [Insights](#insights)
 -   [Resources](#resources)
     -   [Install and test Epicollect5 on your mobile phone](#install-and-test-epicollect5-on-your-mobile-phone)
-    -   [Sign-in to data-flo](#sign-in-to-data-flo)
+    -   [Sign-in to Data-flo](#sign-in-to-data-flo)
     -   [Sign-in to Microreact](#sign-in-to-microreact)
     -   [Web colours](#web-colours)
 -   [Bonus activities](#bonus-activities)
@@ -31,7 +32,7 @@ The increased genetic resolution afforded by genomic data is useful from global 
 
 The job of a genomic epidemiologist often starts by combining data from diverse sources that might not be complete or standardised to facilitate the identification of relevant patterns for meaningful interpretation. Once integrated, the epi, lab, and genomic data can be interrogated over the structure of the tree to identify clusters of interest that will place the isolates in or out of the outbreak.
 
-The [**Centre for Genomic Pathogen Surveillance**](https://www.pathogensurveillance.net/our-software/) develops free web applications for data collection, integration, visualisation, and analysis of genomic epidemiology data. [**Epicollect5**](https://five.epicollect.net/) is a mobile & web application for free and easy data collection. It provides both the web and mobile applications for the generation of forms (questionnaires) and freely hosted project websites for data collection. Projects are created by using the web application at [five.epicollect.net](five.epicollect.net), and then downloaded to the device to perform the data collection. Data are collected in the field using multiple devices and all data can be viewed on a central server (via map, tables, and charts). [**Data-flo**](https://data-flo.io/) is a system for customised integration and manipulation of diverse data via a simple drag and drop interface. Data-flo provides a visual method to design a reusable pipeline to integrate, clean, and manipulate data in a multitude of ways, eliminating the need for continuous manual intervention (e.g., coding, formatting, spreadsheet formulas, manual copy-pasting). [**Microreact**](https://microreact.org/) allows you to upload, visualise and explore any combination of clustering (trees), geographic (map) and temporal (timeline) data. Other metadata variables are displayed in a table. You can specify colours and/or shapes to display on the map, tree and/or timeline. A permanent URL is produced for you to share your Microreact.
+The [**Centre for Genomic Pathogen Surveillance**](https://www.pathogensurveillance.net/our-software/) develops free web applications for data collection, integration, visualisation, and analysis of genomic epidemiology data. [**Epicollect5**](https://five.epicollect.net/) is a mobile & web application for free and easy data collection. It provides both the web and mobile applications for the generation of forms (questionnaires) and freely hosted project websites for data collection. Projects are created by using the web application at [five.epicollect.net](https://five.epicollect.net/), and then downloaded to the device to perform the data collection. Data are collected in the field using multiple devices and all data can be viewed on a central server (via map, tables, and charts). [**Data-flo**](https://data-flo.io/) is a system for customised integration and manipulation of diverse data via a simple drag and drop interface. Data-flo provides a visual method to design a reusable pipeline to integrate, clean, and manipulate data in a multitude of ways, eliminating the need for continuous manual intervention (e.g., coding, formatting, spreadsheet formulas, manual copy-pasting). [**Microreact**](https://microreact.org/) allows you to upload, visualise and explore any combination of clustering (trees), geographic (map) and temporal (timeline) data. Other metadata variables are displayed in a table. You can specify colours and/or shapes to display on the map, tree and/or timeline. A permanent URL is produced for you to share your Microreact.
 
 # Introduction
 
@@ -39,26 +40,26 @@ Aim: To use web and mobile tools for the collection of epi data in the field, in
 
 *Note: This exercise is a work of fiction. Any resemblance to a real life situation is purely coincidental.*
 
-During January and February 2026, *Klebsiella pneumoniae* was isolated from clinical samples of 34 patients at several hospitals and clinics in and around Dublin, Ireland. Approximately half of the patients had presented with urinary tract infections (UTIs) although a variety of other infection types were seen including three sepsis cases. One colony from each confirmed case was sequenced on an Illumina MiSeq. An epidemiological investigation revealed that some of the culture-confirmed cases ***were faculty at the College of Research, Arts, Innovation & Culture (CRAIC) in Dublin***. This suggested that the campus may be the central point of transmission in this outbreak. The epidemiological and demographic data is summarised in the file [epi_data.csv](https://drive.google.com/drive/folders/10TqyS_APg3cDz68NvzMJ5Clc0c6H4dTY?usp=sharing).
+During January and February 2026, *Klebsiella pneumoniae* was isolated from clinical samples of 34 patients at several hospitals and clinics in and around Dublin, Ireland. The majority of the patients presented with urinary tract infections (UTIs) although a variety of other infection types were seen including three sepsis cases. One colony from each confirmed case was sequenced on an Illumina MiSeq. An epidemiological investigation revealed that some of the culture-confirmed cases ***were faculty at the College of Research, Arts, Innovation & Culture (CRAIC) in Dublin***. This suggested that the campus may be the central point of transmission in this outbreak. The epidemiological and demographic data is summarised in the file [epi_data.csv](https://drive.google.com/drive/folders/10TqyS_APg3cDz68NvzMJ5Clc0c6H4dTY?usp=sharing).
 
 **Following the confirmation of the 34 positive cases of *K. pneumoniae* ST258 infections, the management of CRAIC denied that the Klebsiella pneumoniae could have spread within the campus and declared that deep cleaning of the campus was taking place regularly.**
 
-**A team of disease detectives will be deployed around CRAIC today to investigate the possibility of environmental contamination of *K. pneumoniae* within the campus**, using Epicollect5, data-flo, Pathogenwatch, and Microreact, free mobile and web applications developed by the Centre for Genomic Pathogen Surveillance for easy data collection, analysis, integration and visualisation.
+**A team of disease detectives will be deployed around CRAIC today to investigate the possibility of environmental contamination of *K. pneumoniae* within the campus**, using Epicollect5, Data-flo, Pathogenwatch, and Microreact, free mobile and web applications developed by the Centre for Genomic Pathogen Surveillance for easy data collection, analysis, integration and visualisation.
 
 # Objectives
 
 At the end of this session the participants will be able to:
 
 1.  Collect data in the field with Epicollect5.
-2.  Analyse genomes using PathogenWatch
-3.  Merge epidemiological, laboratory and genomic data with data-flo
+2.  Analyse genomes using Pathogenwatch
+3.  Merge epidemiological, laboratory and genomic data with Data-flo
 4.  Create a Microreact project to visualise epidemiological, laboratory and genomic data
 
 ## 1. Collect field data with Epicollect
 
 `https://five.epicollect.net/`
 
-The disease detectives will work in pairs, and will be provided with a **collection tube** with a **barcode** sample identifier to collect a surface or water sample, and will use their **mobile phone** to collect associated metadata in the field.
+The disease detectives will work in pairs, and will be provided with a **collection tube** with a **barcode** sample identifier to collect a water sample, and will use their **mobile phone** to collect associated metadata in the field.
 
 Make sure your phone is connected to WiFi. Open the **Epicollect5** app on your mobile phone.
 
@@ -71,7 +72,7 @@ Add the project **Dublin 2026 K pneumoniae Outbreak** by clicking on `+ ADD PROJ
 ![](img/epicollect_search.png)
 
 
-Using the plan of the CRAIC campus provided, walk to the location of your collection point. Locations are indicated by the black dots labelled a-j. You will not need internet access to collect data in the field.
+Using the plan of the CRAIC campus provided, walk to the location of your collection point. Locations are indicated by the numbered zones 1-10 (note that an area within zone 9 is excluded). You will not need internet access to collect data in the field.
 
 ![](img/location_map.png)
 
@@ -93,12 +94,12 @@ Once all entries are uploaded by the disease detectives we will take a look at t
 
 Answer the following questions:
 
-> 1.  What is the most common type of source?
+> 1.  What is the most common type of water source sampled (e.g. tap, drinking fountain, water cooler)?
 > 2.  Was it possible to collect a sample from all sources? If not, what were the reasons?
 
-## 2. Analyse genomes with PathogenWatch
+## 2. Analyse genomes with Pathogenwatch
 
-The reference lab has sent you the culture results in an Excel file called [`lab_results.xlsx`](https://drive.google.com/drive/folders/10TqyS_APg3cDz68NvzMJ5Clc0c6H4dTY?usp=sharing). The lab reported that **2 out of 13** water samples from the CRAIC campus were positive for *K. pneumoniae*. **This immediately prompted the closure of the 2 water sources and internal investigation.**
+The reference lab has sent you the culture results in an Excel file called [`lab_results.xlsx`](https://drive.google.com/drive/folders/10TqyS_APg3cDz68NvzMJ5Clc0c6H4dTY?usp=sharing). The lab reported that **2 out of 11** water samples from the CRAIC campus were positive for *K. pneumoniae*. **This immediately prompted the closure of the 2 water sources and internal investigation.**
 
 > Does this confirm that the source of the outbreak can be found in the campus of CRAIC?
 
@@ -142,31 +143,31 @@ You should now be able to find the [`mlst-Pasteur.csv`](https://drive.google.com
 
 `https://data-flo.io/`
 
-*Note: you need to sign-up for data-flo and Microreact. See instructions in the [Resources](#resources) section. Creating your own account will allow you to manage and edit your projects.*
+*Note: you need to sign-up for Data-flo and Microreact. See instructions in the [Resources](#resources) section. Creating your own account will allow you to manage and edit your projects.*
 
 A maximum likelihood phylogenetic tree ([`tree.nwk`](https://drive.google.com/drive/folders/10TqyS_APg3cDz68NvzMJ5Clc0c6H4dTY?usp=sharing)) was inferred from the genomes of the 34 clinical samples and 2 environmental (water) samples. Six genomes from a previous outbreak (Mar-Apr 2024) were also included in the tree inference and their associated data added to the [`epi_data.csv`](https://drive.google.com/drive/folders/10TqyS_APg3cDz68NvzMJ5Clc0c6H4dTY?usp=sharing) file.
 
 The disease detectives now have the information needed for the investigation in the following formats:
 
 -   [`epi_data.csv`](https://drive.google.com/drive/folders/10TqyS_APg3cDz68NvzMJ5Clc0c6H4dTY?usp=sharing) Epi data from 34 clinical cases and 6 cases from previous outbreak
--   `Epicollect project` Metadata of 13 water sources from the CRAIC campus
--   [`lab_results.xlsx`](https://drive.google.com/drive/folders/10TqyS_APg3cDz68NvzMJ5Clc0c6H4dTY?usp=sharing) Culture and serotyping results
--   [`mlst-Pasteur.csv`](https://drive.google.com/drive/folders/10TqyS_APg3cDz68NvzMJ5Clc0c6H4dTY?usp=sharing) MLST results from PathogenWatch
+-   `Epicollect project` Metadata of 11 water sources from the CRAIC campus
+-   [`lab_results.xlsx`](https://drive.google.com/drive/folders/10TqyS_APg3cDz68NvzMJ5Clc0c6H4dTY?usp=sharing) Culture results
+-   [`mlst-Pasteur.csv`](https://drive.google.com/drive/folders/10TqyS_APg3cDz68NvzMJ5Clc0c6H4dTY?usp=sharing) MLST results from Pathogenwatch
 -   [`tree.nwk`](https://drive.google.com/drive/folders/10TqyS_APg3cDz68NvzMJ5Clc0c6H4dTY?usp=sharing) Phylogenetic tree of 34 clinical cases, 2 culture-positive water samples, and 6 cases from previous outbreak
 
 The files are located in [**this link**](https://drive.google.com/drive/folders/10TqyS_APg3cDz68NvzMJ5Clc0c6H4dTY?usp=sharing).
 
-We will combine data from these different sources with a data-flo workflow that takes the files above and the data from the Epicollect project as input, and creates a Microreact project as output where the data can be visualised.
+We will combine data from these different sources with a Data-flo workflow that takes the files above and the data from the Epicollect project as input, and creates a Microreact project as output where the data can be visualised.
 
-Open the data-flo workflow ([**https://www.data-flo.io/run/is2MaZpxgjgT1o1uDkff8g**](https://www.data-flo.io/run/is2MaZpxgjgT1o1uDkff8g))
+Open the Data-flo workflow ([**https://www.data-flo.io/run/is2MaZpxgjgT1o1uDkff8g**](https://www.data-flo.io/run/is2MaZpxgjgT1o1uDkff8g))
 
 ![](img/dataflo_2025.png)
 
-Copy the workflow to your own dataflo account.
+Copy the workflow to your own Data-flo account.
 
 ![](img/dataflo_copy.png)
 
-This will open a copy of this workflow in your dataflo account.
+This will open a copy of this workflow in your Data-flo account.
 
 ![](img/dataflo_workflow.png)
 
@@ -182,7 +183,7 @@ Edit the workflow to include your own microreact `API access token`.
 
 ![](img/dataflo_key.png)
 
-Save your newly edited dataflo project by clicking on the `save` icon.
+Save your newly edited Data-flo project by clicking on the `save` icon.
 
 ![](img/dataflo_save.png)
 
@@ -190,24 +191,24 @@ Now let's go to the implementation page by clicking on the `RUN` option.
 
 ![](img/dataflo_implementation.png)
 
-To run the workflow paste the url of the Epicollect5 project ([**https://www.data-flo.io/run/jPZFNdqdkixkRnyuDkH2ti**](https://www.data-flo.io/run/jPZFNdqdkixkRnyuDkH2ti)) and upload the files (file1 and file2), found [`here`](https://drive.google.com/drive/folders/10TqyS_APg3cDz68NvzMJ5Clc0c6H4dTY?usp=sharing).
+To run the workflow, paste the URL of the Epicollect5 project ([**https://five.epicollect.net/project/dublin-2026-k-pneumoniae-outbreak**](https://five.epicollect.net/project/dublin-2026-k-pneumoniae-outbreak)) into the `epicollect project url` field, and upload the four files found [`here`](https://drive.google.com/drive/folders/10TqyS_APg3cDz68NvzMJ5Clc0c6H4dTY?usp=sharing) into their matching fields: `lab_results.xlsx` (lab results excel), `tree.nwk` (tree), `epi_data.csv` (epi_data csv), and `mlst-Pasteur.csv` (PW MLST csv).
 
 ![](img/dataflo_run2.png)
 
-Click on **`Run`**. The Outputs box now shows the url of a Microreact project created by data-flo.
+Click on **`Run`**. The Outputs box now shows the url of a Microreact project created by Data-flo.
 
 ![](img/dataflo_result.png)
 
 Before you open the Microreact project answer the following questions:
 
-> 1.  If later on we wanted to add additional entries (i.e. water samples) to the Epicollect project, could we use the same data-flo? If so, how would this be beneficial?
-> 2.  Do you use/know of any other methods to join data? If so, how do they compare with data-flo?
+> 1.  If later on we wanted to add additional entries (i.e. water samples) to the Epicollect project, could we use the same Data-flo? If so, how would this be beneficial?
+> 2.  Do you use/know of any other methods to join data? If so, how do they compare with Data-flo?
 
 ## 4. Explore phylogenetic and epidemiological data with Microreact
 
 `https://microreact.org/`
 
-Open the Microreact link in the output from data-flo. It should look something like this:
+Open the Microreact link in the output from Data-flo. It should look something like this:
 
 ![](img/microreact_link.png)
 
@@ -236,7 +237,7 @@ Now select "Categorical" from the `Colour Palette` option. Next, select "qualita
 
 ![](img/microreact_palette.png)
 
-Add the columns "Workplace" and "Workplace details" as metadata blocks. For this, select the slider icon from top right of the tree panel, then, click on the `Metadata blocks` button. Finally, select "Workplace" and "Workplace details" from the list of options.
+Add the columns "Workplace" and "Workplace detail" as metadata blocks. For this, select the slider icon from top right of the tree panel, then, click on the `Metadata blocks` button. Finally, select "Workplace" and "Workplace detail" from the list of options.
 
 ![](img/microreact_metadata_blocks.png)
 
@@ -255,7 +256,7 @@ Now explore the microreact you just created and try to answer the following ques
 
 Epicollect5 is available on Android and iOS. To install it on your mobile device, get it from Google Play or the Apple App Store. To test Epicollect5 on your phone, open the application and click on the pre-loaded EC5 Demo Project. Click on `+ Add entry` and follow the questionnaire. Please answer all the questions, including taking a photo with your phone's camera. Once you've answered the questions, save and upload the entry. Please note that you must be connected to the internet (or to a mobile network) to be able to upload an entry.
 
-## Sign-in to data-flo
+## Sign-in to Data-flo
 
 [**https://docs.data-flo.io/introduction/getting-started-sign-in**](https://docs.data-flo.io/introduction/getting-started-sign-in)
 
@@ -319,7 +320,7 @@ d.  Select `Browse Files`
 
 ![](img/microreact_browse_files.png)
 
-e.  Choose the files [`tree.nwk`](https://drive.google.com/drive/folders/10TqyS_APg3cDz68NvzMJ5Clc0c6H4dTY?usp=sharing) and [`epi_data.csv`](https://drive.google.com/drive/folders/10TqyS_APg3cDz68NvzMJ5Clc0c6H4dTY?usp=sharing), and click on the `Open` button (These files were downloaded in the [dataflo](#merge-data-with-data-flo) section).
+e.  Choose the files [`tree.nwk`](https://drive.google.com/drive/folders/10TqyS_APg3cDz68NvzMJ5Clc0c6H4dTY?usp=sharing) and [`epi_data.csv`](https://drive.google.com/drive/folders/10TqyS_APg3cDz68NvzMJ5Clc0c6H4dTY?usp=sharing), and click on the `Open` button (These files were downloaded in the [Data-flo](#3-merge-data-with-data-flo) section).
 
 f.  Click on `Continue` in the next prompts.
 
