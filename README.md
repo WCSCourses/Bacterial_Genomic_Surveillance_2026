@@ -70,7 +70,7 @@ These specifications are recommended to ensure smooth participation in the pract
 
 **Course Instructors**      
 
-- [Caterina Guzman](https://scholar.google.com/citations?user=S1GNAC8AAAAJ&hl=en), Centro de Investigación Enfermedades Tropicales, Costa Rica
+- [Caterina Guzman-Verri](https://scholar.google.com/citations?user=S1GNAC8AAAAJ&hl=en), Programa de Investigación Enfermedades Tropicales, UNA Costa Rica
 - [César Rodríguez](https://scholar.google.com/citations?user=Mq0-MIsAAAAJ&hl=en), Centro de Investigación Enfermedades Tropicales, Costa Rica
 - [Julio Diaz Caballero](https://eit.org/people/julio-diaz-caballero), Ellison Institute of Technology Oxford, United Kingdom
 - [Marcela Suárez-Esquivel](https://scholar.google.com/citations?user=pdf6GMQAAAAJ&hl=en), Universidad Nacional, Costa Rica
